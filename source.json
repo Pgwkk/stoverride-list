@@ -13,7 +13,7 @@ http:
       name: "联通余量(v4)"
       type: request
       # require-body: true
-      timeout: 60
+      timeout: 90
       # debug: true
 
 tiles:
@@ -23,14 +23,14 @@ tiles:
     content: ""
     icon: "arrow.up.arrow.down.circle"
     backgroundColor: "#663399"
-    timeout: 60
+    timeout: 90
     # debug: true
 
 cron:
   script:
     - name: "联通余量(v4)"
       cron: "*/60 * * * *" # at every 60th minute
-      timeout: 60
+      timeout: 90
       # debug: true
 
 script-providers:
